@@ -2,6 +2,6 @@
 <html>
   <body>
     <h1>My first Website using github</h1>
-    <column>Testing</column>
+    <c1>Testing</c1>
   </body>
 </html>
