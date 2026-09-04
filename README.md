@@ -1,7 +1,7 @@
 # SEP2026
-2026 September Semester
+# 2026 September Semester
 ### My First Webpage
 ### TESTING
-TESTING1
-TESTING2
-TESTING3
+### TESTING1
+### TESTING2
+### TESTING3
