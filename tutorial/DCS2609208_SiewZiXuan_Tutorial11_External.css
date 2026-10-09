@@ -1,0 +1,31 @@
+
+    body {
+        h1 {
+            letter-spacing: 5px; /*1. Letter Spacing*/
+            text-shadow: 3px 3px 3px gray; /*2. Text Shadow*/
+        }
+
+        .p1 {
+            opacity: 0.4; /*3. Opacity*/
+            text-transform: uppercase; /*4. Text Transform*/
+        }
+
+        .p1 font {
+            text-decoration: underline; /*5. Text Decoration*/
+        }
+
+        .p2 {
+            border: 2px solid black;
+            border-radius: 25px; /*6. Border Radius*/
+            box-shadow: 3px 3px 3px gray; /*7. Box Shadow*/
+        }
+
+        .p3 {
+            filter: blur(1px); /*8. Filter*/
+            text-indent: 50px; /*9. Text Indent*/
+        }
+
+        .p3 font {
+            font-variant: small-caps; /*10. Font Variant*/
+        }
+    }
