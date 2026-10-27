@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel=icon href=website-icon.png type=image/png>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <script src="java.js" defer></script>
+
+</head>
+<body>
+    <main class="shell">
+        <section class="intro">
+            <div>
+                <div class="logo" aria-hidden="true">
+                    <center>
+                    <img src="website-icon.png" alt="AUREVÉ Logo" width="50" height="50">
+                    </center>
+                </div>
+                <h1>Welcome To AUREVÉ</h1>
+                <p><b>Your next exceptional vintage awaits.</b></p>
+                <p>Sign in to explore your collection, revisit your favourites, and discover wines worth savouring.</p>
+            </div>
+            <small>Need help? Contact our support team.</small>
+        </section>
+         <section class="panel">
+            <h2>A World Worth Savouring</h2>
+            <p class="sub">Enter the world of AUREVÉ, where exceptional wines and timeless elegance meet.</p>
+
+            <form id="loginForm" novalidate>
+                <div class="field">
+                    <label for="username">Username</label>
+                    <div class="control">
+                        <input type="text" id="username" name="username" autocomplete="username" autofocus aria-describedby="usernameMsg">
+                    </div>
+                    <div id="usernameMsg" class="msg" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="control">
+                        <input type="password" id="password" name="password" class="has-toggle" autocomplete="current-password" aria-describedby="passwordMsg">
+                        <button type="button" id="toggle" class="toggle" aria-label="Show password" aria-pressed="false">Show</button>
+                    </div>
+                    <div id="passwordMsg" class="msg" aria-live="polite"></div>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn">
+                    <span class="spinner" aria-hidden="true"></span>
+                    <span id="btnText">Login</span>
+                </button>
+            </form>
+
+        </section>
+        </main>
+</body>
+</html>
