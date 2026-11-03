@@ -117,5 +117,24 @@ body {
         }
         .toggle:hover { background: rgba(159, 41, 66, .1); }
         }
+    @media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .shell {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .intro {
+        padding: 32px 28px;
+        gap: 20px;
+    }
+
+    .panel {
+        padding: 32px 28px;
+    }
+}
         
 } 
