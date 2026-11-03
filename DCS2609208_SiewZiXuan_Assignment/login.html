@@ -13,7 +13,7 @@
     <main class="shell">
         <section class="intro">
             <div>
-                <div class="logo" aria-hidden="true">
+                <div class="logo">
                     <center>
                     <img src="website-icon.png" alt="AUREVÉ Logo" width="50" height="50">
                     </center>
@@ -28,11 +28,12 @@
             <h2>A World Worth Savouring</h2>
             <p class="sub">Enter the world of AUREVÉ, where exceptional wines and timeless elegance meet.</p>
 
-            <form id="loginForm" novalidate>
+            <form id="loginForm" autocomplete="off" novalidate>
+                <div id="alertMessage" class="alert" role="status" aria-live="polite"></div>
                 <div class="field">
-                    <label for="username">Username</label>
+                    <label for="username">Email/Username</label>
                     <div class="control">
-                        <input type="text" id="username" name="username" autocomplete="username" autofocus aria-describedby="usernameMsg">
+                        <input type="text" id="username" name="username" autofocus aria-describedby="usernameMsg">
                     </div>
                     <div id="usernameMsg" class="msg" aria-live="polite"></div>
                 </div>
@@ -40,14 +41,14 @@
                 <div class="field">
                     <label for="password">Password</label>
                     <div class="control">
-                        <input type="password" id="password" name="password" class="has-toggle" autocomplete="current-password" aria-describedby="passwordMsg">
+                        <input type="password" id="password" name="password" class="has-toggle" aria-describedby="passwordMsg">
                         <button type="button" id="toggle" class="toggle" aria-label="Show password" aria-pressed="false">Show</button>
                     </div>
                     <div id="passwordMsg" class="msg" aria-live="polite"></div>
                 </div>
 
                 <button type="submit" id="submitBtn" class="btn">
-                    <span class="spinner" aria-hidden="true"></span>
+                    <span class="spinner"></span>
                     <span id="btnText">Login</span>
                 </button>
             </form>
