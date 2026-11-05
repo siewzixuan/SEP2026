@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial 16</title>
+
+        <link rel=icon href=sunder-muthukumaran-fd6K_OFlnRA-unsplash.jpg type=image/jpg>
+        <meta name=viewport content=width=device-width, initial-scale=1.0>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: none;
+                padding: 10px;
+            }
+            input {
+                margin: 0px;
+            }
+            select {
+                width: 40ch;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <table border="3">
+        <tr>
+            <th><h1>DCS3003 Website Design Course Survey</h1></th>
+        </tr>
+        <tr>
+            <td style="padding: 20px;">
+                <table border="3">
+                    <tr><td style="color: blue;"><u>Personal detail</u></td></tr>
+                    <tr>
+                        <th align="left">
+                            <label for="studentid">Student ID</label>
+                        </th>
+                        <th>:</th>
+                        <td>
+                            <input type="text" id="studentid" name="studentid" size="40" maxlength="5">
+                        </td>
+                        <th align="left">
+                            <label for="studentname">Student Name</label>
+                        </th>
+                        <th>:</th>
+                        <td>
+                            <input type="text" id="studentname" name="studentname" size="40" maxlength="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th align="left">
+                            <label for="email">Email Address</label>
+                        </th>
+                        <th>:</th>
+                        <td>
+                            <input type="email" id="email" name="email" size="40" maxlength="5">
+                        </td>
+                        <th align="left">
+                            <label for="ic">IC No.</label>
+                        </th>
+                        <th>:</th>
+                        <td>
+                            <input type="text" id="ic" name="ic" size="40" maxlength="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th align="left">
+                            <label for="course">Course</label>
+                        </th>
+                        <th>:</th>
+                        <td>
+                            <select id="course" name="course" maxlength="5">
+                                <option value="0">- List of Courses -</option>
+                                <optgroup label="Diploma in Computer Science">
+                                    <option value="DCS_S1">Semester 1</option>
+                                    <option value="DCS_S2">Semester 2</option>
+                                    <option value="DCS_S3">Semester 3</option>
+                                    <option value="DCS_S4">Semester 4</option>
+                                    <option value="DCS_S5">Semester 5</option>
+                                    <option value="DCS_S6">Semester 6</option>
+                                </optgroup>
+                                <option value="DIB">Diploma in Business</option>
+                                <option value="DAS">Diploma in Airline Services</option>
+                            </select>
+                        </td>
+                        <th align="left">
+                            <label for="dob">D.O.B</label>
+                        </th>
+                        <th>:</th>
+                        <td>
+                            <input type="date" id="dob" name="dob" size="40" maxlength="5">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table border="3">
+                    <tr>
+                        <td style="color:blue;"><u>Questions</u></td>
+                    </tr>
+                    <tr>
+                        <td style="color:red;"><b>Please answer all questions</b></td>
+                    </tr>
+                    <tr>
+                        <td>1) Have you grasped the content of the Website Design so far</td>
+                        <td>
+                            <input type="radio" name="Q1" value="YES"> YES<br>
+                            <input type="radio" name="Q1" value="NO"> NO<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2) Can you now create a simple but interactive website?</td>
+                        <td>
+                            <input type="radio" name="Q2" value="YES"> YES<br>
+                            <input type="radio" name="Q2" value="NO"> NO<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3) What have you learned so far?</td>
+                        <td>
+                            <input type="checkbox" name="Q3" value="Knowledge"> Knowledge<br>
+                            <input type="checkbox" name="Q3" value="Practical Skills"> Practical Skills<br>
+                            <input type="checkbox" name="Q3" value="Problem Solving"> Problem Solving<br>
+                            <input type="checkbox" name="Q3" value="Self-Exploration Skills"> Self-Exploration Skills
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">4) Wish items/suggestions <span style="color: red;">*</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="wish" rows="4" style="width: 100%; box-sizing: border-box;"></textarea>
+                        </td>
+                    </tr>
+            </tr>
+                </table>
+        </center>
+        <center>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </center>
+            </td>
+        </tr>
+    </body>
+</html>
