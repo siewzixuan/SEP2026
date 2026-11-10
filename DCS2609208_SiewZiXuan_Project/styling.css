@@ -1,0 +1,138 @@
+:root {
+    --ink: #2b1933;
+    --muted: #786d7d;
+    --line: #e2d9e5;
+    --bg: #281a30;
+    --card: #fffaf5;
+    --accent: #9f2942;
+    --accent-dark: #781d34;
+    --gold: #c6a45e;
+    --error: #b42318;
+    --ok: #1a7f4b;
+    --radius: 10px;
+        }
+        * { box-sizing: border-box; }
+        html, body { min-height: 100%; }
+body {
+    background:
+        radial-gradient(
+            ellipse at 10% 15%,
+            rgba(198, 164, 94, 0.13),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 90% 85%,
+            rgba(159, 41, 66, 0.18),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #3b1b4f 0%,
+            #7a2e6f 45%,
+            #FF6B6B 100%
+        );
+
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    .shell {
+            width: 100%;
+            max-width: 880px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: var(--card);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(10, 4, 14, .45), 0 0 0 1px rgba(198, 164, 94, .22);
+            .intro {
+                background: linear-gradient(145deg, #24132e 0%, #4a1b37 58%, #671f35 100%);
+                border-top: 3px solid var(--gold);
+                color: #f6edf2;
+                padding: 48px 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 32px;
+            }
+        .intro small { color: #dbc58e; }
+        .panel { padding: 48px 40px; }
+        .field { margin-bottom: 20px; }
+        .msg { min-height: 1.2em; margin-top: 5px; color: var(--error); font-size: .85rem; }
+        .alert {
+            display: none;
+            padding: 10px 13px;
+            margin-bottom: 10px;
+            margin-top: -5px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        .alert.success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+        }
+
+        label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 6px; }
+        .control { position: relative; }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            font: inherit;
+            padding: 12px 14px;
+            border: 1.5px solid var(--line);
+            border-radius: var(--radius);
+            background: #fff;
+            color: var(--ink);
+        }
+            .btn {
+                width: 100%; font: inherit; font-weight: 600; font-size: 1rem;
+                padding: 13px; border: 0; border-radius: var(--radius);
+                background: var(--accent); color: #fff; cursor: pointer;
+                display: flex; align-items: center; justify-content: center; gap: 10px;
+                transition: background .15s;
+            }
+            .btn:hover:not(:disabled) { background: var(--accent-dark); } 
+            button:disabled {
+                background-color: var(--accent-dark);
+                color: var(--card);
+                border: 1px solid var(--accent);
+                cursor: default;
+                opacity: 0.7;
+                transition: background-color 0.3s ease,
+                            color 0.3s ease,
+                            border-color 0.3s ease,
+                            opacity 0.3s ease;
+            }
+        .toggle {
+            position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+            border: 0; background: none; color: var(--accent); font: inherit; font-size: .85rem; font-weight: 600;
+            padding: 6px 8px; border-radius: 6px; cursor: pointer;
+        }
+        .toggle:hover { background: rgba(159, 41, 66, .1); }
+        }
+    @media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .shell {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .intro {
+        padding: 32px 28px;
+        gap: 20px;
+    }
+
+    .panel {
+        padding: 32px 28px;
+    }
+}
+        
+} 
